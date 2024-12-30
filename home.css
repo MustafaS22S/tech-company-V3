@@ -1,0 +1,300 @@
+/* General Start */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('peakpx1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+button {
+  background: #00f7ff;
+  border: none;
+  padding: 10px 25px;
+  color: black;
+  font-size: 1em;
+  font: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  
+}
+
+button:hover {
+  background: #0097A7;
+  color: white;
+}
+/* General End */
+
+/* Navigation Start */
+header {
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #00f7ff;
+}
+
+header .nav a {
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+header .nav a:hover {
+    color: #00f7ff;
+}
+
+header .login-nav {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+header .login-nav:hover {
+    background: #00f7ff;
+    color: black;
+}
+/* Navigation End */
+
+
+
+/* Main Section Start */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    width: 90%;
+    height: 750px;
+    transition: 0.8s ease;
+}
+.hero:hover{
+  box-shadow: 0 4px 30px #00f7ff;
+  transform: scale(1.01);
+
+
+}
+
+.hero h2 {
+    margin-top: 190px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+.hero button {
+  background: #00f7ff;
+  border: none;
+  padding: 10px 25px;
+  color: black;
+  font-size: 1em;
+  font: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.hero button:hover {
+  background: #0097A7;
+  color: white;
+}
+/* Main Section End */
+
+
+
+/* Product Section Start */
+.product-grid {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: auto;
+    width: 90%;
+    max-width: 1500px;
+    
+}
+
+
+.product-card {
+
+    margin-top:10px ;
+    background: rgba(55, 71, 79, 0.9);
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+   
+}
+
+
+
+
+
+.product-card:hover {
+  box-shadow: 0 4px 30px #00f7ff;
+}
+.product-card button{
+  width: auto;
+  font-size: 0.9em;
+  border-radius : 20px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;    
+}
+.product-card img:hover{
+  transform:scale(1.1) ;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 0.9em;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.product-card .view-more {
+    background: #00f7ff;
+    border: none;
+    padding: 8px 15px;
+    color: black;
+    font-size: 0.9em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.product-card .view-more:hover {
+    background: #0097A7;
+    color: white;
+}
+/* Product Section End */
+
+
+
+/* Footer Styles Start*/
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-section {
+  text-align: left;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #00f7ff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #00f7ff;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.footer-section img {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
+
+.contact-link {
+  color: #00f7ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #fff;
+}
+
+.footer-section iframe {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 150px;
+}
+/* Footer Styles Start*/
+

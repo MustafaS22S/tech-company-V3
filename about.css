@@ -1,0 +1,237 @@
+    /* General Start */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 10px 0 10px;
+    width: 98%;
+
+    padding: 0;
+    background: url('peakpx1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #00f7ff;
+}
+
+a {
+    text-decoration: none;
+    color: #00f7ff;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #fff;
+}
+    /* General End */
+
+
+
+    /* Navigation Start */
+header {
+    width: 98%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #00f7ff;
+}
+
+header .nav a,button {
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+header img{
+  margin-left: 20px;
+  width: 180px;
+  }
+
+header .nav a,button:hover {
+    color: #00f7ff;
+}
+
+header .login-nav {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+header .login-nav:hover {
+    background: #00f7ff;
+    color: black;
+}
+    /* Navigation end */
+
+
+
+
+
+
+
+    /* Main Section Start */
+.contener {
+  border: 1px solid rgba(255, 255, 255,0.5);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 80%;
+    gap: 20px;
+    transition: 0.8s ease;
+}
+.contener:hover{
+    box-shadow: 0 4px 30px #00f7ff;
+}
+
+.about-intro h1{
+  transition: 0.5s ease;
+}
+.about-intro h1:hover{
+  color: #ffffff;
+  text-shadow: 0 5px 100px #00f7ff;
+  
+}
+
+.about-content {
+    flex: 1 1 45%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+
+.about-banner {
+    flex: 1 1 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-banner img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.video {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 60%;
+}
+
+.video video {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+    /* Main Section End */
+
+
+
+
+    /* Footer Start */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .footer-section {
+    text-align: left;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #00f7ff;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #00f7ff;
+  }
+  
+  .footer-section p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .footer-section img {
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-bottom {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    font-size: 0.9rem;
+  }
+  
+  .contact-link {
+    color: #00f7ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-link:hover {
+    color: #fff;
+  }
+  
+  .footer-section iframe {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 150px;
+  }
+    /* Footer End */
